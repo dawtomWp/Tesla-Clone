@@ -5,13 +5,19 @@ import {itemsContent} from '../assets/storage/itemsContent'
 
 
 const StyledWrapper = styled.div`
+   scroll-snap-type: y mandatory;
+   overflow: auto;
+   height:100%;
 
+`
+const StyledItem = styled(Item)`
+    scroll-snap-align: start;
 `
 
 const ItemsContainer = () => {
 
     const ItemsList = itemsContent.map(item => 
-         <Item 
+         <StyledItem 
             title={item.title}
             desc={item.desc}
             descLink={item.descLink}

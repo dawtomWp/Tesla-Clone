@@ -1,14 +1,20 @@
 @font-face {
     font-family: 'iCielMedium';
-    src: local('iCielMedium'), url('./assets/fonts/iCiel-Medium.ttf');
+    src: local('iCielMedium'), url('./assets/fonts/iCiel-Medium.ttf') format('truetype');
     font-weight: normal;
 }
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin:0;
-    font-family: 'iCiel-Medium'
+    font-family: iCiel-Medium, sans-serif;
+    letter-spacing:2px;
+
+
 }
+
+
